@@ -23,7 +23,7 @@ void AboutPage::Draw()
                         QString("Jonathan Thomas - Server Architecture, Netcode\n") +
                         QString("Zach Mattor - Client, Server-Side Game Loop\n") +
                         QString("Adam Cumings - Database Design and Implementation");
-    al_draw_text(m_font, al_map_rgb(69,214,95), 400, 200, ALLEGRO_ALIGN_CENTRE, aboutText.toAscii().data());
+    al_draw_text(m_font, al_map_rgb(69,214,95), 400, 200, ALLEGRO_ALIGN_CENTRE, aboutText.toLatin1().data());
 
     m_buttonBack->Draw();
 }

@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = tisclient
 
-QT += core network phonon
+QT += core network
 
 INCLUDEPATH += ../netlib/
 
