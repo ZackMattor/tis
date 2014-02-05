@@ -182,7 +182,7 @@ void SessionManager::disconnectUser(const QByteArray &sessionId, const QString &
     // Populate response packet
     dcPacket.setSessionId(sessionId);
     dcPacket.setCommandId(Protocol::PlayerDisconnected);
-    dcPacket.setArgs(reason.toAscii());
+    dcPacket.setArgs(reason.toLatin1());
     dcPacket.calculateChecksum();
 
     // Remove session from hash

@@ -25,7 +25,7 @@ int Ship::health() const
 QByteArray Ship::name() const
 {
     if (m_player)
-        return m_player->userName().toAscii();
+        return m_player->userName().toLatin1();
 
     return QByteArray();
 }

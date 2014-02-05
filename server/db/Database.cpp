@@ -33,9 +33,9 @@ bool Database::init()
 
     try
     {
-        m_database = driver->connect(loginServerUrl.toAscii().data(),
-                                     serverUserName.toAscii().data(),
-                                     serverPassword.toAscii().data());
+        m_database = driver->connect(loginServerUrl.toLatin1().data(),
+                                     serverUserName.toLatin1().data(),
+                                     serverPassword.toLatin1().data());
         m_database->setSchema("tis");
     }
     catch (SQLException &e)
