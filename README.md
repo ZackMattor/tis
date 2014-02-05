@@ -16,3 +16,11 @@ Todo
  - Get spec in markdown format
  - Get running on vps
  - Host website on vps
+
+
+Build Deps:
+----
+
+Ubuntu Packages names
+--
+libmysqlcppconn-dev libmysqlcppconn7
